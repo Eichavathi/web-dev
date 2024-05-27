@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <style>
+    .text-blue{
+     color: rgb(42, 42, 120);
+    }
+    .icon  {
+        font-size: 30px;
+        padding-block-start:0 px; ;
+    }
+    .card{
+      height: 480px;
+      box-shadow: 2px 2px 15px  lightslategray;
+      border-color: black;
+
+    }
+    hr{
+      
+        border-width: 5px;
+        border-style:calc();
+        color: rgb(5, 15, 79);
+        height: 20px;
+        margin-top: 10px;
+        padding-top: 10px;
+    
+    }
+    .bg-blue{
+      background-color: rgb(13,45,98);
+
+    }
+    
+  </style>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid ">
+        <img src="https://webstream.sastra.edu/sastrapwi/images/SASTRA-New-Logo.png" width="270" ps-0>
+        <li class="nav-item dropdown text-blue">
+          <a class="nav-link dropdown-toggle text-blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <b>Sastra Home</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <b>About Us</b> 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Sastra</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Governance</a>
+                <a class="dropdown-item" href="#">Leadership</a>
+                <a class="dropdown-item" href="#">Academic council</a>
+              </div>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <b>Academics</b> 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">online</a>
+                <a class="dropdown-item" href="#">school</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">program</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>Admission</b>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tuition Fee</a>
+                <a class="dropdown-item" href="#">Hostel Fee</a>
+                
+              </div>
+            </li>
+            <li class="nav-item dropdown text-blue">
+              <a class="nav-link dropdown-toggle text-blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>Research</b>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <b>Infrastructure</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <b>Useful Links</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <b> Parent Corner</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Student Web interface</a>
+                  <a class="dropdown-item" href="#">Parent Web Interface</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Welcome Kit</a>
+                  <a class="dropdown-item" href="#">Library Orientatin Program</a>
+                  <a class="dropdown-item" href="#">Rules and Regiations</a>
+                </div>
+              </li>
+           
+            
+            
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<footer>
+   <div class="container pt-5">
+    <div class="row">
+      <div class="col-3">
+      <div class="card">
+        <h3 class="head text-blue ps-3 ">CONTACT</h3>
+        <hr >
+        <p class="details">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;SASTRA DEEMED UNIVERSITY <br>
+          &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Tirumalaisamudram <br>
+          <i class="bi bi-house-door-fill icon"></i>
+          Thanjavur - 613401<br>
+          &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Tamilnadu, India</p>
+         
+          <p class="details">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;+91 4362 264101 - 108<br>
+              <i class="bi bi-telephone-fill icon"></i>
+              +91 4362 350001 (20 lines)</p>
+           <p>+91 4362 264120</p>  
+           <p><i class="bi bi-envelope-fill icon"></i>&nbsp;&nbsp;&nbsp;admissionssastra.edu</p>
+
+
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card">
+        <h3 class="head text-blue ps-3 ">VISIT</h3>
+        <hr>
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.077338489262!2d79.01583617355115!3d10.728518360078601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baabe2803211597%3A0x6371e96c202331c!2sSASTRA%20Deemed%20University!5e0!3m2!1sen!2sin!4v1716802477648!5m2!1sen!2sin" width="260" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card">
+        <h3 class="head text-blue ps-3 ">QUICK LINKS</h3>
+        <hr>
+        <ul class="nav flex-column text-dark">
+          <li class="nav-item ">
+            <a class="nav-link active text-dark" href="https://scholarships.gov.in/">National Scholarship Portal
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="https://www.sastra.edu/academic-bank-of-credits-abc-registration.html">Academic Bank of Credits Registration(ABC)</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link disabled text-dark" href="https://www.digilocker.gov.in/">DigiLocker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="https://www.sastra.edu/downloads/news/2016/may/UGC_DEB_Ins.Recg.Doc.pdf">UGC-DEB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="https://www.sastra.edu/ncte.html">NCTE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="https://www.sastra.edu/sunatinsranfr/index.php">NIRF</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-dark" href="https://www.sastra.edu/naac.html">NAAC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="https://www.sastra.edu/headlines-archives.html">Headlines Archives</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="https://www.sastra.edu/events-archives.html">Events Archives</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card">
+        <h3 class="head text-blue ps-3 ">USEFUL-LINKS</h3>
+        <hr>
+        <ul class="nav flex-column text-dark">
+          <li class="nav-item ">
+            <a class="nav-link active text-dark" href="#"><i class="bi bi-arrow-right"></i>  ITIHAS (University Newsletter)
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">NPTEL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">ILLUMINATI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-dark" href="#">Student Web Interface</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="#">Parent Web Interface</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">UGC Job Portal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Alumni Network Portal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-dark" href="#">Guest House Request</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Video Tour</a>
+          </li>
+         
+         
+        </ul>
+      </div>
+    </div>
+  </div>
+   </div>
+   <div class="container-fluid pt-3">
+    <div class="row">
+      <div class="col text-center bg-blue text-light">
+      <p>© SASTRA DEEMED UNIVERSITY, All Rights Reserved. 2024</p>
+    </div></div>
+   </div>
+   
+   
+   
+</footer> 
+</body>
+</html>
