@@ -44,9 +44,49 @@
         font-size: 1em;
        border-width: 70px;
     }
+    *{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
 </style>    
 </head>
     <body>
+      <!--  HEADER-->
         <div class="container-fluid p-2">
             <div class="row">
                 <div class="col-4 justify content center bg-violet">
@@ -93,7 +133,7 @@
         </div>
 
 
-
+<!--MAIN HEADER-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <img src="https://shreemsweetsandbakery.com/wp-content/uploads/2021/05/shreem-final-logo.png" width="190">
@@ -196,25 +236,163 @@
                 </div>
             </div>
           </div>
+
+          <!-- TABS-->
+
+
           <div class="container">
-            <div class="row " style="padding-top: 30px;font-size: 25px;">
-                <ul class="nav nav-underline justify-content-center" >
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
+            <div class="row " >
+              <ul class="nav nav-underline justify-content-center" role="tablist" style="padding-top: 30px;font-size: 25px;">
+                <li class="nav-item">
+                  <a class="nav-link active" id="tab-one" data-toggle="tab" href="#content-one" role="tab" aria-controls="content-one" aria-selected="true"  style="padding-right: 30px;font-size: 18px;color: black;">DESCRIPTION</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="tab-two" data-toggle="tab" href="#content-two" role="tab" aria-controls="content-two" aria-selected="false" style="padding-right: 30px;font-size: 18px;color: black;">ADDITONAL INFORMATION</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="tab-three" data-toggle="tab" href="#content-three" role="tab" aria-controls="content-three" aria-selected="false" style="padding-right: 30px;font-size: 18px;color: black;">REVIEWS</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent" style="padding-top: 50px;" style="padding-top: 30px;font-size: 25px;">
+                <div class="tab-pane fade show active" id="content-one" role="tabpanel" aria-labelledby="tab-one">
+                  
+                  <p style="font-size: 17px;opacity: 0.6; text-align: justify;">This cake features a marbled exterior of black and gold, adorned with cascading gold leaves of  gold glaze placed individually by our cake artists. Topped with a feast of vanilla macarons and chocolate candies that’s sure to please candy lovers.</p>
+                  <p style="font-size: 17px;opacity: 0.6;  text-align: justify;">A recipe for a good chocolate cake is something that can never go to waste. A chocolate cake might sound intimidating because of how great it tastes. Layers of  chocolate cake alternate with whipped ganache, then it is coated with a shiny glaze</p>
+                  <h6 style="font-size: 17px;opacity: 0.6; text-align: justify;">Nutritional Information*</h6>
+                  <table class="table table-bordered" style="font-size: 16px;opacity: 0.5;">
+                    <tr>
+                      <td>Calories    </td>
+                      <td>61 kcal </td>
+                     </tr>
+                     <tr>
+                      <td>Fat    </td>
+                      <td>4.1 g </td>
+                     </tr>
+                     <tr>
+                      <td>Cholesterol    </td>
+                      <td>6.4 g </td>
+                     </tr>
+                     <tr>
+                      <td>Sodium    </td>
+                      <td>8.2 g </td>
+                     </tr>
+                     <tr>
+                      <td>Carbohydrates    </td>
+                      <td>5.4 g </td>
+                     </tr>
+                     <tr>
+                      <td>Fiber   </td>
+                      <td>0.3 g </td>
+                     </tr>
+                     <tr>
+                      <td>Sugar    </td>
+                      <td>4.6 g </td>
+                     </tr>
+                     <tr>
+                      <td>Protein   </td>
+                      <td>5.4 g </td>
+                     </tr>
+                  </table>
+                </table>
+                </div>
+                <div class="tab-pane fade" id="content-two" role="tabpanel" aria-labelledby="tab-two">
+                    
+                  <table class="table table-bordered" style="font-size: 15px;opacity: 0.5;">
+                    <thead>
+                      <tr>
+                        <th scope="col">WEIGHT</th>
+                        <th scope="col">N/A</th>
+                        <tbody>
+                          <tr>
+                           
+                            <td>CHOOSE VARIANTS    </td>
+                            <td>1.5 Kg, 3 Kg </td>
+                           
+                          </tr>
+                          <tr>
+                            
+                            <td>INGREDIENTS</td>
+                            <td>All Purpose Flour, Baking Soda, Butter, Chopped chocolate, Cocoa Powder, Dark Chocolate, Eggs, Golden Syrup, Milk, Salt, Semisweet Chocolate Chips, Vanilla Extract, White Chocolate</td>
+                            
+                          </tr>
+                         
+                            <td>BEST BEFORE</td>
+                              <td>10 days from the date of packing (when stored in an airtight container)</td>
+                              
+                            </tr>
+                            <tr>
+                              <td>MANUFACTURED BY       </td>
+                                <td>Shreem Sweets and Bakery</td>
+                               
+                              </tr>
+                              <tr>
+                           
+                          
+                        </tbody>
+                        
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div class="tab-pane fade" id="content-three" role="tabpanel" aria-labelledby="tab-three">
+                   
+                    <div class="card"style="width: 1150px;height:740px; padding-left: 20px;">
+                      <p style="font-size: 18px; padding-top: 30px; opacity: 0.7;">There are no reviews yet</p>
+                      <h5>BE THE FIRST TO REVIEW “CHOCO GOLDEN 2 TIER CAKE”</h5>
+                      <p style="font-size: 16px;  opacity: 0.7;">Your email address will not be published. Required fields are marked *</p>
+                      <p style="font-size: 16px; opacity: 0.7;">Your rating *</p>
+                      
+
+  <div class="rate" style="margin-right: 940px;border-color: #ffc700;font-size: 10px;">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+                      <form >
+                        <div class="review">
+                          <label for="inputPassword4" class="form-label" style="font-size: 16px; opacity: 0.5;">Your review*</label>
+                          <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" ></textarea>
+    
+                        </div>
+                        <div class="name">
+                          <div class="email" style="opacity: 0.5; width: 280px;">
+                            <label for="inputPassword4" class="form-label">Name*</label>
+                            <input type="email" class="form-control" id="inputPassword4">
+                          </div>
+                        </div>
+                        <div class="email" style="opacity: 0.5; width: 280px;padding-top: 10px;font-size: 16px;">
+                          <label for="inputPassword4" class="form-label">Email *</label>
+                          <input type="email" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="form-check" >
+                          <input class="form-check-input" type="checkbox" id="autoSizingCheck2" ><br>
+                          <label class="form-check-label" for="autoSizingCheck2" style="opacity: 0.5;opacity: 0.5; padding-top: 10px;font-size: 17px;">
+                            Save my name, email, and website in this browser for the next time I comment.
+                          </label><br>
+                          <br>
+                          <p style="opacity: 0.5; font-size: 14px;">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="background-color: black;  width: 117px; height: 49px; border-color: black; font-size: medium;margin-top :30px; margin-left: 20px;">SUBMIT</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
             </div>
           </div>
-          
+
+
+          <!--FOOTER-->
+
+
 <div class="container-fluid bg-navy">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
       <div class="col ps-5 mb-3">
