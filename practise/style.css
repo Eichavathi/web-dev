@@ -1,0 +1,17 @@
+.back-img{
+    height: 466px;
+    width: 10px;
+}
+.header-img{
+    width: 200px;
+}
+.card{
+    height: 466px;
+    width: 100%;
+    opacity: 0.8;
+    
+    margin-top: -400px;
+}
+h3 {
+    color: blue;
+}
