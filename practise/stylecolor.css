@@ -1,0 +1,35 @@
+.bg-brown{
+    background-color:rgb(94, 14, 14);
+    color:white;
+    }
+    .bg-yellow{
+      background-color:rgb(255, 188, 63)
+    }
+    .custom-container1{
+      width:60%;
+    }
+    .icon p i {
+  font-size: 2em;
+  color: white;
+}
+    
+.int-img{
+    width:100% ;
+    height:900px ;
+    opacity: 0.5;
+   
+}
+.p-one{
+ margin-top: -800px;
+ text-align: center;
+
+}
+.h1-one{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+.h1-two{
+color: rgb(250,180,47);
+text-align: center;
+}
