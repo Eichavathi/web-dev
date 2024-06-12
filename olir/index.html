@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/4b527de4ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
     <style>
       .custom-container1{
       width:100%;
@@ -77,6 +80,94 @@
       margin-top: 20px;
       text-decoration: solid;
     }
+    .image{
+      position: relative;
+      width: 330px;
+      height: 270px;
+      margin-top: 15px;
+      margin-left: 20px;
+      
+    }
+    .content{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #f7ad42;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: 0.1s;
+      position: relative;
+      align-items: center;
+     
+
+    }
+    .content:hover {
+      opacity: 0.9;
+     
+    }
+    .card:hover{
+      border-color: #f7ad42;
+      border-width: 2px;
+    }
+    .carousel-container {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto;
+    position: relative;
+  }
+  .carousel-item img {
+    width: 100%;
+  }
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000;
+  }
+  .slick-prev {
+    left: 10px;
+    color : black;
+  }
+  .slick-next {
+    right: 10px;
+    color : black;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 3px;
+  }
+  .carousel {
+  display: flex;
+  overflow-x: auto; /* Horizontal scroll for overflow */
+  scroll-snap-type: x mandatory; /* Snap to each image */
+}
+.slide {
+  flex: 0 0 auto; /* Disable flex grow and shrink */
+  scroll-snap-align: start; /* Snap to start of each image */
+  margin-right: 10px; /* Adjust spacing between images */
+}
+.slide img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
     
     </style>
   </head>
@@ -242,18 +333,32 @@
   </div>
   <div class="row">
     <div class="col sm-12 md-12 lg-4">
-      
-<img src="https://olirdesigns.com/wp-content/uploads/2021/07/diahome-rollup.png" style="width: 370px;height: 300px;padding: 20px">
+ <div class="image">    
+<img src="https://olirdesigns.com/wp-content/uploads/2021/07/diahome-rollup.png" style="width: 370px;height: 300px;padding: 20px ; display: block;margin: auto;">
+<div class="content">
+ 
+  <p> <b style="text-align: center; justify-content: center;">Rythme</b><br>Trending , PRomotional </p>
+</div>
+</div> 
 </div>
     
     <div class="col sm-12 md-12 lg-4">
-      <img src="https://olirdesigns.com/wp-content/uploads/2023/06/Colourbricks.jpg" style="width: 370px;height: 300px;padding: 20px">
-
-</div>
-    
-    <div class="col sm-12 md-12 lg-4">
-      <img src="https://olirdesigns.com/wp-content/uploads/2024/02/rkengineer.jpg" style="width: 370px;height: 300px;padding: 20px">
+      <div class="image">
+      <img src="https://olirdesigns.com/wp-content/uploads/2023/06/Colourbricks.jpg" style="width: 370px;height: 300px;padding: 20px ; display: block;margin: auto;">
+      <div class="content">
+        <p> <b style="text-align: center; justify-content: center;">Glow Plus</b><br>Trending , PRomotional </p>
+      </div>
     </div>
+</div>
+    
+    <div class="col sm-12 md-12 lg-4">
+      <div class="image">
+      <img src="https://olirdesigns.com/wp-content/uploads/2024/02/rkengineer.jpg" style="width: 370px;height: 300px;padding: 20px;display: block;margin: auto;">
+      <div class="content">
+        <p> <b style="text-align: center; justify-content: center;">Rasata</b><br>Trending , PRomotional </p>
+      </div>
+    </div>
+  </div>
     <div class="col sm-12 md-12 lg-4">
   <img src="https://olirdesigns.com/wp-content/uploads/2021/08/rhythm-logo-design.jpg" style="width: 370px;height: 300px;padding: 20px">
     </div>
@@ -308,11 +413,60 @@
   <div class="row">
     
       <b><h1 class="h1">Clients</h1></b>
-      <img src="https://olirdesigns.com/wp-content/uploads/2022/07/cupids-client.png" style="width: 250px; height: 250px;padding-left: 80px;">
-      <img src="https://olirdesigns.com/wp-content/uploads/2022/07/freddo-client.png" style="width: 250px; height: 230px;padding-left: 80px;padding: 20px;">
-      <img src="https://olirdesigns.com/wp-content/uploads/2022/07/kripala-client.png" style="width: 250px; height: 250px;padding: 10px;">
-      <img src="https://olirdesigns.com/wp-content/uploads/2022/07/signature-client.png" style="width: 250px; height: 250px;padding: 10px;">
-     
+      <div class="carousel-container">
+        <div class="carousel" style="margin-left : 50px; margin-right:50px;">
+          <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/kripala-client.png" ></div>
+          <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/vilvatech-client.png" ></div>
+          <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/diahome-client.png" ></div>
+          <div class="carousel-item slide" ><img src="https://olirdesigns.com/wp-content/uploads/2022/07/cupids-client.png" ></div>
+          <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/TCC-client.png" ></div>
+          <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/iyer-coffee-client.png" ></div>
+          <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/akshayams-client.png"></div>
+          <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/goldcup-client.png"></div>
+          <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/signature-client.png"></div>
+          <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/kripala-client.png"></div>
+         
+        </div>
+        <button class="slick-prev" onclick="prevSlide()" style="color:black;">&#10094;</button>
+        <button class="slick-next" onclick="nextSlide()"style="color:black;">&#10095;</button>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.carousel').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: false,
+            nextArrow: false,
+            dots: true,
+            infinite: false,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+        });
+        function nextSlide() {
+          $('.carousel').slick('slickNext');
+        }
+        function prevSlide() {
+          $('.carousel').slick('slickPrev');
+        }
+        </script>
+      
   </div>
   <div class="row">
     <b><h1 class="h1">Testimonial</h1></b>
